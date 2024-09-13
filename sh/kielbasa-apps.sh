@@ -41,6 +41,10 @@ flatpak install flathub org.videolan.VLC
 echo "Installing OnlyOffice...."
 flatpak install flathub org.onlyoffice.desktopeditors
 
+# Install LocalSend
+echo "Installing LocalSend..."
+flatpak install flathub org.localsend.localsend_app
+
 # Completion message
 echo "Installation of Nextcloud, Obsidian, Vivaldi, Visual Studio Code, 
 VLC, OnlyOffice, Master PDF Editor is complete!"
