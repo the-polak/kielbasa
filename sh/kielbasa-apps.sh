@@ -2,7 +2,8 @@
 
 #   HOWTO: 
 #           chmod +x kielbasa-apps.sh
-#           ./kielbasa-apps.sh
+#           sudo ./kielbasa-apps.sh
+
 
 # Fedora Update
 echo "Updating OS...."
@@ -45,6 +46,22 @@ flatpak install flathub org.onlyoffice.desktopeditors
 echo "Installing LocalSend..."
 flatpak install flathub org.localsend.localsend_app
 
+# Install Mullvad Browser
+echo "Installing Mullvad Browser"
+flatpak install flathub net.mullvad.MullvadBrowser   
+
+# Tailscale - https://tailscale.com/kb/1050/install-fedora
+echo "Add Tailscale Repo & install Tailscale"
+sudo dnf config-manager --add-repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+sudo dnf install tailscale
+sudo systemctl enable --now tailscaled
+sudo tailscale up
+tailscale ip -4
+
+# KTailctl - https://github.com/f-koehler/KTailctl
+echo "Installing KTailctl..."
+flatpak install flathub org.fkoehler.KTailctl
+
 # Completion message
 echo "Installation of Nextcloud, Obsidian, Vivaldi, Visual Studio Code, 
-VLC, OnlyOffice, Master PDF Editor is complete!"
+VLC, OnlyOffice, Master PDF Editor, Mullvad Browser and Tailscale is complete!"
