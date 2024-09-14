@@ -61,19 +61,19 @@ flatpak install -y flathub com.visualstudio.code
 
 # Install VLC Media Player - https://github.com/videolan/vlc
 echo "Installing VLC Media Player..."
-flatpak install flathub org.videolan.VLC
+flatpak install -y flathub org.videolan.VLC
 
 # Install OnlyOffice
 echo "Installing OnlyOffice...."
-flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install -y flathub org.onlyoffice.desktopeditors
 
 # Install LocalSend - https://github.com/localsend/localsend
 echo "Installing LocalSend..."
-flatpak install flathub org.localsend.localsend_app
+flatpak install -y flathub org.localsend.localsend_app
 
 # Install Mullvad Browser - https://github.com/mullvad/mullvad-browser
 echo "Installing Mullvad Browser"
-flatpak install flathub net.mullvad.MullvadBrowser   
+flatpak install -y flathub net.mullvad.MullvadBrowser   
 
 # Tailscale - https://tailscale.com/kb/1050/install-fedora
 echo "Add Tailscale Repo & install Tailscale"
@@ -85,7 +85,7 @@ tailscale ip -4
 
 # KTailctl - https://github.com/f-koehler/KTailctl
 echo "Installing KTailctl..."
-flatpak install flathub org.fkoehler.KTailctl
+flatpak install -y flathub org.fkoehler.KTailctl
 
 echo
 
