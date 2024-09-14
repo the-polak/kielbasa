@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #   HOWTO: 
-#           chmod +x kielbasa-apps.sh
+#           chmod a+x kielbasa-apps.sh
 #           sudo ./kielbasa-apps.sh
 
 
