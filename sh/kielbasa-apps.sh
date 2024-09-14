@@ -3,6 +3,8 @@
 #   HOWTO: 
 #           chmod a+x kielbasa-apps.sh
 #           sudo ./kielbasa-apps.sh
+#
+#           My first Bash script. 
 
 
 # Fedora Update
@@ -63,12 +65,15 @@ echo "Installing KTailctl..."
 flatpak install flathub org.fkoehler.KTailctl
 
 echo
-echo
-echo
 
 # Run KTailctl
 echo "Starting KTailctl..."
 flatpak run org.fkoehler.KTailctl
+
+echo
+echo
+echo
+echo
 
 # Completion message
 echo "Installation of Nextcloud, Obsidian, Vivaldi, Visual Studio Code, 
