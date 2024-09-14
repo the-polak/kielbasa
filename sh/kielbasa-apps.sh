@@ -66,6 +66,10 @@ echo
 echo
 echo
 
+# Run KTailctl
+echo "Starting KTailctl..."
+flatpak run org.fkoehler.KTailctl
+
 # Completion message
 echo "Installation of Nextcloud, Obsidian, Vivaldi, Visual Studio Code, 
 VLC, OnlyOffice, Master PDF Editor, Mullvad Browser and Tailscale is complete!"
