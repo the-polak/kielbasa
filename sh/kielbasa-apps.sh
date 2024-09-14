@@ -62,6 +62,10 @@ tailscale ip -4
 echo "Installing KTailctl..."
 flatpak install flathub org.fkoehler.KTailctl
 
+echo
+echo
+echo
+
 # Completion message
 echo "Installation of Nextcloud, Obsidian, Vivaldi, Visual Studio Code, 
 VLC, OnlyOffice, Master PDF Editor, Mullvad Browser and Tailscale is complete!"
