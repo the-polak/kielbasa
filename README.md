@@ -1,4 +1,3 @@
-    Dump for scripts to make distro-hopping easier. 
+    Post Install script for Fedora. 
 
-
-This is my initial foray into this world. IDK what i'm doing. 
+This is my initial foray into this world. I may make this distro-agnostic. IDK what I'm doing. 
