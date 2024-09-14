@@ -24,8 +24,8 @@ sudo dnf install -y \
 
 # Install multimedia codecs (optional)
 echo "Installing multimedia codecs..."
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf groupupdate sound-and-video
+sudo dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf groupupdate -y sound-and-video
 
 # Install Development Tools (optional)
 echo "Installing development tools..."
@@ -90,8 +90,8 @@ flatpak install -y flathub org.fkoehler.KTailctl
 echo
 
 # Run KTailctl
-echo "Starting KTailctl..."
-flatpak run org.fkoehler.KTailctl
+# echo "Starting KTailctl..."
+# flatpak run org.fkoehler.KTailctl
 
 echo
 echo
