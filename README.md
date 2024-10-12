@@ -1,3 +1,4 @@
     Post Install script for Fedora. 
+    KDE Plasma 6 backup script
 
-This is my initial foray into this world. I may make this distro-agnostic. IDK what I'm doing.
+This is my initial foray into this world. IDK what I'm doing.
