@@ -1,7 +1,14 @@
 #!/bin/bash
 
 # @darthkielbasa
-# learning shell scripting... Use cautiously!
+
+: '
+make script executable: 
+chmod +x backup_kde_plasma.sh
+
+./backup_kde_plasma.sh
+'
+
 echo "Proceed with caution..."
 
 # Backup destination
