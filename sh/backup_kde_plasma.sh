@@ -20,17 +20,17 @@ mkdir -p "$BACKUP_DIR"
 
 # List of KDE Plasma settings to backup
 FILES_TO_BACKUP=(
-    "$HOME/.config/plasma*"
+#    "$HOME/.config/plasma*"
     "$HOME/.config/kdeglobals"
     "$HOME/.config/kwinrc"
     "$HOME/.config/dolphinrc"
     "$HOME/.local/share/plasma/"
     "$HOME/.local/share/icons/"
-    "$HOME/.local/share/aurorae/"
-    "$HOME/.local/share/desktopthemes/"
-    "$HOME/.local/share/color-schemes/"
-    "$HOME/.config/kglobalshortcutsrc"
-    "$HOME/.config/khotkeysrc"
+#    "$HOME/.local/share/aurorae/"
+#    "$HOME/.local/share/desktopthemes/"
+#    "$HOME/.local/share/color-schemes/"
+#    "$HOME/.config/kglobalshortcutsrc"
+#    "$HOME/.config/khotkeysrc"
     "$HOME/.config/autostart/"
 )
 
