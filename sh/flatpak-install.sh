@@ -6,6 +6,11 @@
   #
   #           My first Bash script. 
 
+: '
+             chmod a+x kielbasa.sh
+             sudo ./kielbasa.sh
+
+'
 
   # Fedora Update
   echo "Updating OS...."
