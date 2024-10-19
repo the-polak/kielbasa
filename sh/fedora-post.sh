@@ -1,14 +1,14 @@
   #!/bin/bash
 
   #   HOWTO: 
-  #           chmod a+x kielbasa.sh
-  #           sudo ./kielbasa.sh
+  #           chmod a+x fedora-post.sh
+  #           sudo ./fedora-post.sh
   #
   #           My first Bash script. 
 
 : '
-             chmod a+x kielbasa.sh
-             sudo ./kielbasa.sh
+             chmod a+x fedora-post.sh
+             sudo ./fedora-post.sh
 
 '
 
