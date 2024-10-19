@@ -1,8 +1,8 @@
 #!/bin/bash
 
 : '
-             chmod a+x kielbasa.sh
-             sudo ./kielbasa.sh
+             chmod a+x neon-post.sh
+             sudo ./neon-post.sh
 '
 # KDE Neon Edition
 
