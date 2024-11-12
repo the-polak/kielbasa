@@ -1,15 +1,12 @@
-  #!/bin/bash
-
-  #   HOWTO: 
-  #           chmod a+x fedora-post.sh
-  #           sudo ./fedora-post.sh
-  #
-  #           My first Bash script. 
-
 : '
+     HOWTO: 
              chmod a+x fedora-post.sh
              sudo ./fedora-post.sh
-
+  
+             My first Bash script. 
+  
+             chmod a+x fedora-post.sh
+             sudo ./fedora-post.sh
 '
 
   # Fedora Update
