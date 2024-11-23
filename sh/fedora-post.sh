@@ -16,7 +16,7 @@
 
   # Install essential packages
   echo "Installing essential packages..."
-  sudo dnf install -y git wget curl htop neofetch
+  sudo dnf install -y git wget curl htop fastfetch
 
   # Enable RPM Fusion (Free and Non-Free)
   echo "Enabling RPM Fusion repositories..."
@@ -25,17 +25,19 @@
     https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
   # Install multimedia codecs (optional)
-  echo "Installing multimedia codecs..."
-  sudo dnf groupupdate -y multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-  sudo dnf groupupdate -y sound-and-video
+  echo "Installing multimedia..."
+  dnf group install multimedia
+
+
 
   # Install Development Tools (optional)
   echo "Installing development tools..."
-  sudo dnf groupinstall -y "Development Tools" "Development Libraries"
-
-  # Set up Neofetch to run on login (optional)
-  echo "Setting up Neofetch on login..."
-  echo "neofetch" >> ~/.bashrc
+  # sudo dnf groupinstall -y "Development Tools" "Development Libraries" 
+  dnf install @development-tools
+  
+  # Set up Neofetch to run when opening terminal (optional)
+  echo "Setting up Fastfetch on terminal run..."
+  echo "fastfetch" >> ~/.bashrc
 
   # Automagically Adding Flatpak Repo
   echo "Ensuring Flathub Repo is added..."
@@ -78,16 +80,16 @@
   flatpak install -y flathub net.mullvad.MullvadBrowser   
 
   # Tailscale - https://tailscale.com/kb/1050/install-fedora
-  echo "Add Tailscale Repo & install Tailscale"
-  sudo dnf config-manager --add-repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-  sudo dnf install tailscale
-  sudo systemctl enable --now tailscaled
-  sudo tailscale up
-  tailscale ip -4
+ # echo "Add Tailscale Repo & install Tailscale"
+ # sudo dnf config-manager --add-repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+ # sudo dnf install tailscale
+ # sudo systemctl enable --now tailscaled
+ # sudo tailscale up
+ # tailscale ip -4
 
   # KTailctl - https://github.com/f-koehler/KTailctl
-  echo "Installing KTailctl..."
-  flatpak install -y flathub org.fkoehler.KTailctl
+ # echo "Installing KTailctl..."
+ # flatpak install -y flathub org.fkoehler.KTailctl
 
   echo
 
