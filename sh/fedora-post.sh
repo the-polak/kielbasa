@@ -3,7 +3,7 @@
              chmod a+x fedora-post.sh
              sudo ./fedora-post.sh
   
-             My first Bash script. 
+             Fedora 41 Post-Install 
   
              chmod a+x fedora-post.sh
              sudo ./fedora-post.sh
@@ -36,8 +36,8 @@
   dnf install @development-tools
   
   # Set up Neofetch to run when opening terminal (optional)
-  echo "Setting up Fastfetch on terminal run..."
-  echo "fastfetch" >> ~/.bashrc
+  # echo "Setting up Fastfetch on terminal run..."
+  # echo "fastfetch" >> ~/.bashrc
 
   # Automagically Adding Flatpak Repo
   echo "Ensuring Flathub Repo is added..."
@@ -45,7 +45,7 @@
 
   # Update Flatpak repositories
   echo "Updating Flatpak repositories..."
-  flatpak update
+  flatpak update -y
 
   # Install Nextcloud Desktop - https://github.com/nextcloud/desktop
   echo "Installing Nextcloud Desktop..."
@@ -79,17 +79,16 @@
   echo "Installing Mullvad Browser"
   flatpak install -y flathub net.mullvad.MullvadBrowser   
 
-  # Tailscale - https://tailscale.com/kb/1050/install-fedora
- # echo "Add Tailscale Repo & install Tailscale"
- # sudo dnf config-manager --add-repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo
- # sudo dnf install tailscale
- # sudo systemctl enable --now tailscaled
- # sudo tailscale up
- # tailscale ip -4
+  # Tailscale - https://tailscale.com/kb/1511/install-fedora-2
+  sudo dnf config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+  && 
+  sudo dnf install tailscale
+  &&
+  &&
+  sudo systemctl enable --now tailscaled
+  &&
+  sudo tailscale up
 
-  # KTailctl - https://github.com/f-koehler/KTailctl
- # echo "Installing KTailctl..."
- # flatpak install -y flathub org.fkoehler.KTailctl
 
   echo
 
@@ -103,7 +102,7 @@
   # Clean up system
   echo "Cleaning up..."
   sudo dnf autoremove -y
-  sudo dnf clean all
+  sudo dnf clean all -y
 
   echo
   echo
