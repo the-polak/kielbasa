@@ -2,13 +2,10 @@
 
 : '
      HOWTO:
-             chmod a+x fedora-post.sh
-             sudo ./fedora-post.sh
+Fedora 41 Post-Install
 
-             Fedora 41 Post-Install
-
-             chmod a+x fedora-post.sh
-             sudo ./fedora-post.sh
+chmod a+x fedora-post.sh
+sudo ./fedora-post.sh
 '
 
 # Log all output for debugging purposes
