@@ -1,0 +1,4 @@
+# adjust for your preferred app
+ 
+#!/bin/bash
+/Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser --disable-gpu --disable-software-rasterizer &
