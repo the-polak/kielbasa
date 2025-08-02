@@ -1,6 +1,8 @@
-Sweep the leg. 
+<!-- markdownlint-disable MD041 -->
+# Scripts, notes and configs for random stuff. 
 
-# TODO
+
+TODO
 
 1.  
   
