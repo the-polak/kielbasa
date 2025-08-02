@@ -1,0 +1,13 @@
+# Halloy config.
+# 08-01-25
+# For a complete list of available options,
+# please visit https://halloy.chat/configuration/
+
+[servers.rogueserver]
+nickname = "spoko"
+alt_nicks = ["spoko_", "spoko-"]
+server = "irc.rogueserver.com"
+channels = ["#dragonmere","wasted"]
+use_tls = false
+port = 6667
+on_connect = ["/list","/join #wasted", "/join #dragonmere"]
