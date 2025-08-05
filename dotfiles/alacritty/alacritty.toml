@@ -5,27 +5,27 @@ WINIT_X11_SCALE_FACTOR = "1"
 [window]
 dynamic_padding = true
 decorations = "full"
-title = "Alacritty"
-opacity = 0.8
+dynamic_title = true
+opacity = 0.9
 decorations_theme_variant = "Dark"
 
 [window.dimensions]
-columns = 150
-lines = 30
+columns = 162
+lines = 33
 
 [window.class]
 instance = "Alacritty"
 general = "Alacritty"
 
 [scrolling]
-history = 10000
+history = 20000
 multiplier = 3
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x2E3440"
+background = "#000000"
 foreground = "0xD8DEE9"
 
 [colors.normal]
@@ -49,22 +49,22 @@ cyan = "0x8FBCBB"
 white = "0xECEFF4"
 
 [font]
-size = 12
+size = 13
 
 [font.normal]
-family = "FiraCode Nerd Font"
+family = "Hack"
 style = "Regular"
 
 [font.bold]
-family = "FiraCode Nerd Font"
+family = "Hack"
 style = "Bold"
 
 [font.italic]
-family = "FiraCode Nerd Font"
+family = "Hack"
 style = "Italic"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font"
+family = "Hack"
 style = "Bold Italic"
 
 [selection]
@@ -84,7 +84,6 @@ hide_when_typing = true
 mouse = "Middle"
 action = "PasteSelection"
 
-[keyboard]
 [[keyboard.bindings]]
 key = "Paste"
 action = "Paste"
@@ -163,7 +162,6 @@ action = "ResetFontSize"
 live_config_reload = true
 working_directory = "None"
 
-# 06-17-25
 [terminal.shell]
 program = "/usr/bin/fish"
 args = ["-c", "fastfetch; exec fish"]
